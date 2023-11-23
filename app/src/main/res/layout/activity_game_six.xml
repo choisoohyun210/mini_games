@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:columnCount="2">
+        <TextView
+            android:id="@+id/textView"
+            android:paddingTop="40dp"
+            android:paddingBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="23dp"
+            android:text="참참참 3번 이기면 된다냥!"
+            android:layout_columnWeight="1"
+            android:fontFamily="@font/cutefont"/>
+
+        <TextView
+            android:id="@+id/Win"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:text="Win: 0"
+            android:textSize="18sp"
+            android:fontFamily="@font/cutefont"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:text="Time:0"
+            android:textSize="18sp"
+            android:fontFamily="@font/cutefont"
+            android:textColor="@android:color/black"/>
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/hand"
+            android:id="@+id/hand_imageview"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/set_hand_imageview"/>
+
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        android:columnCount="2">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:src="@drawable/leftface"
+            android:scaleType="centerInside"
+            android:backgroundTint="@color/white"
+            android:id="@+id/LF_btn"
+            android:onClick="btn_click"
+            android:contentDescription="왼쪽 얼굴 버튼"/>
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:src="@drawable/rightface"
+            android:scaleType="centerInside"
+            android:backgroundTint="@color/white"
+            android:id="@+id/RF_btn"
+            android:onClick="btn_click"
+            android:contentDescription="오른쪽 얼굴 버튼"/>
+
+
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/start_btn"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="START"
+        android:backgroundTint="@color/black"
+        android:onClick="btn_click"
+        android:fontFamily="@font/cutefont"/>
+
+
+</LinearLayout>

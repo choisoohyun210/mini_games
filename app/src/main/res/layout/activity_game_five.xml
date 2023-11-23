@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="MainActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:paddingTop="8dp"
+            android:paddingBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="쥐를 25번 흔들어주면 된다냥!"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:fontFamily="@font/cutefont"/>
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:columnCount="2">
+
+        <TextView
+            android:id="@+id/scoreTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="60dp"
+            android:gravity="center"
+            android:text="Score: 0"
+            android:textSize="18sp"
+            android:fontFamily="@font/cutefont"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:fontFamily="@font/cutefont"
+            android:text="Time:0"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </GridLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="120"
+        android:orientation="vertical">
+
+
+        <ImageButton
+            android:id="@+id/punch1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:scaleType="fitXY"
+            android:src="@drawable/punch1"></ImageButton>
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/punch2"
+            android:scaleType="fitXY"
+            android:backgroundTint="@color/white"
+            android:id="@+id/punch2"></ImageButton>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/start_btn"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/cutefont"
+        android:text="START" />
+    <!--        android:onClick="btn_click"-->
+
+
+
+</LinearLayout>

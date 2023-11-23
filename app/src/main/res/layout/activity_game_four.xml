@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:background="@drawable/routeback">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80"
+        android:layout_margin="40dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:scaleType="fitCenter"
+            android:gravity="center"
+            android:fontFamily="@font/cutefont"
+            android:text="냥이바위보 3번 이기면 된다냥!"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:scaleType="fitCenter"
+            android:gravity="center"
+            android:text="시간"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/cutefont"/>
+
+        <ImageView
+            android:id="@+id/yourRSP"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/catface" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:scaleType="fitCenter"
+            android:text="VS"
+            android:textSize="40dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/cutefont" />
+
+        <ImageView
+            android:id="@+id/myRSP"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+
+            android:src="@drawable/mmmmm"/>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+
+
+        <ImageButton
+            android:id="@+id/buttonRock"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:layout_weight="25"
+            android:background="@android:color/transparent"
+            android:alpha="0.93"
+            android:src="@drawable/catrock" />
+<!--            android:onClick="button_click"-->
+
+
+        <ImageButton
+            android:id="@+id/buttonPaper"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:layout_weight="25"
+            android:background="@android:color/transparent"
+            android:alpha="0.93"
+            android:src="@drawable/catpaper" />
+<!--            android:onClick="button_click"-->
+
+        <ImageButton
+            android:id="@+id/buttonScissors"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:layout_weight="25"
+            android:background="@android:color/transparent"
+            android:alpha="0.93"
+            android:src="@drawable/catscissor" />
+
+        <TextView
+            android:id="@+id/resultview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="25"
+            android:gravity="center"
+            android:scaleType="fitCenter"
+            android:text="score"
+            android:background="@android:color/transparent"
+            android:letterSpacing="-0.1"
+            android:textSize="50dp"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/cutefont"/>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

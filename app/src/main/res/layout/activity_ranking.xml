@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rankingback"
+    android:orientation="vertical">
+    <!-- title -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/cutefont"
+                android:gravity="right"
+                android:padding="13dp"
+                android:text="랭킹"
+                android:textColor="#CDFFFFFF"
+                android:textSize="50dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/sub_retry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#BC6574CA"
+                android:fontFamily="@font/cutefont"
+                android:text="돌아가기"
+                android:textColor="#D2FFFFFF"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="7dp"
+                tools:layout_editor_absoluteY="57dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cutefont"
+        android:gravity="center"
+        android:textSize="20dp" />
+
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#33888888"
+        android:stretchColumns="*">
+
+        <!-- row1 : 필드명 -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:background="#CACDDF"
+                android:fontFamily="@font/cutefont"
+                android:gravity="center"
+                android:padding="10dp"
+                android:radius="10dp"
+                android:text="순위"
+                android:textSize="20dp" />
+
+            <TextView
+                android:background="#CACDDF"
+                android:fontFamily="@font/cutefont"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="이름"
+                android:textSize="20dp" />
+
+            <TextView
+                android:background="#CACDDF"
+                android:fontFamily="@font/cutefont"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="기록(초)"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <!-- row2 : 값 -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/ranking1"
+                android:fontFamily="@font/cutefont"
+                android:gravity="center"
+                android:textColor="#CACDDF"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/name1"
+                android:ellipsize="end"
+                android:fontFamily="@font/cutefont"
+                android:gravity="center"
+                android:maxLength="5"
+                android:textColor="#CACDDF"
+                android:singleLine="true"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/time1"
+                android:fontFamily="@font/cutefont"
+                android:gravity="center"
+                android:textColor="#CACDDF"
+                android:textSize="20dp" />
+        </TableRow>
+        <!-- row3 : 값 -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/ranking2"
+                android:fontFamily="@font/cutefont"
+                android:gravity="center"
+                android:textColor="#CACDDF"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/name2"
+                android:ellipsize="end"
+                android:fontFamily="@font/cutefont"
+                android:gravity="center"
+                android:maxLength="5"
+                android:textColor="#CACDDF"
+                android:singleLine="true"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/time2"
+                android:fontFamily="@font/cutefont"
+                android:gravity="center"
+                android:textColor="#CACDDF"
+                android:textSize="20dp" />
+        </TableRow>
+        <!-- row4 : 값 -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/ranking3"
+                android:fontFamily="@font/cutefont"
+                android:gravity="center"
+                android:textColor="#CACDDF"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/name3"
+                android:ellipsize="end"
+                android:fontFamily="@font/cutefont"
+                android:gravity="center"
+                android:textColor="#CACDDF"
+                android:maxLength="5"
+                android:singleLine="true"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/time3"
+                android:fontFamily="@font/cutefont"
+                android:gravity="center"
+                android:textColor="#CACDDF"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <!-- row5 : 값 -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/ranking4"
+                android:fontFamily="@font/cutefont"
+                android:gravity="center"
+                android:textColor="#CACDDF"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/name4"
+                android:ellipsize="end"
+                android:fontFamily="@font/cutefont"
+                android:gravity="center"
+                android:textColor="#CACDDF"
+                android:maxLength="5"
+                android:singleLine="true"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/time4"
+                android:fontFamily="@font/cutefont"
+                android:gravity="center"
+                android:textColor="#CACDDF"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <!-- row6 : 값 -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/ranking5"
+                android:fontFamily="@font/cutefont"
+                android:gravity="center"
+                android:textColor="#CACDDF"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/name5"
+                android:ellipsize="end"
+                android:fontFamily="@font/cutefont"
+                android:gravity="center"
+                android:textColor="#CACDDF"
+                android:maxLength="5"
+                android:singleLine="true"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/time5"
+                android:fontFamily="@font/cutefont"
+                android:gravity="center"
+                android:textColor="#CACDDF"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <!-- row7 : 값 -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/ranking6"
+                android:fontFamily="@font/cutefont"
+                android:gravity="center"
+                android:textColor="#CACDDF"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/name6"
+                android:ellipsize="end"
+                android:fontFamily="@font/cutefont"
+                android:gravity="center"
+                android:textColor="#CACDDF"
+                android:maxLength="5"
+                android:singleLine="true"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/time6"
+                android:fontFamily="@font/cutefont"
+                android:gravity="center"
+                android:textColor="#CACDDF"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <!-- row8 : 값 -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/ranking7"
+                android:fontFamily="@font/cutefont"
+                android:gravity="center"
+                android:textColor="#CACDDF"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/name7"
+                android:ellipsize="end"
+                android:fontFamily="@font/cutefont"
+                android:gravity="center"
+                android:textColor="#CACDDF"
+                android:maxLength="5"
+                android:singleLine="true"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/time7"
+                android:fontFamily="@font/cutefont"
+                android:gravity="center"
+                android:textColor="#CACDDF"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <!-- row9 : 값 -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/ranking8"
+                android:fontFamily="@font/cutefont"
+                android:gravity="center"
+                android:textColor="#CACDDF"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/name8"
+                android:ellipsize="end"
+                android:fontFamily="@font/cutefont"
+                android:gravity="center"
+                android:textColor="#CACDDF"
+                android:maxLength="5"
+                android:singleLine="true"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/time8"
+                android:fontFamily="@font/cutefont"
+                android:gravity="center"
+                android:textColor="#CACDDF"
+                android:textSize="20dp" />
+        </TableRow>
+        <!-- row10 : 값 -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/ranking9"
+                android:fontFamily="@font/cutefont"
+                android:gravity="center"
+                android:textColor="#CACDDF"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/name9"
+                android:ellipsize="end"
+                android:fontFamily="@font/cutefont"
+                android:gravity="center"
+                android:textColor="#CACDDF"
+                android:maxLength="5"
+                android:singleLine="true"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/time9"
+                android:fontFamily="@font/cutefont"
+                android:gravity="center"
+                android:textColor="#CACDDF"
+                android:textSize="20dp" />
+        </TableRow>
+        <!-- row11 : 값 -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/ranking10"
+                android:fontFamily="@font/cutefont"
+                android:gravity="center"
+                android:textColor="#CACDDF"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/name10"
+                android:ellipsize="end"
+                android:fontFamily="@font/cutefont"
+                android:gravity="center"
+                android:textColor="#CACDDF"
+                android:maxLength="5"
+                android:singleLine="true"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/time10"
+                android:fontFamily="@font/cutefont"
+                android:gravity="center"
+                android:textColor="#CACDDF"
+                android:textSize="20dp" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

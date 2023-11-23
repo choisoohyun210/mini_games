@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/routeback"
+    android:layout_height="match_parent"
+    tools:context=".game_three"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/cutefont"
+        android:paddingTop="40dp"
+        android:paddingBottom="16dp"
+        android:text="같은 그림의 카드를 빠르게 찾아라냥!"
+        android:textColor="#213C22"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/start_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#0B510E"
+        android:layout_gravity="center"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="57dp"
+        android:text="start"
+        android:fontFamily="@font/cutefont"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageBtn0"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:src="@drawable/card_q"
+                android:scaleType="fitXY"
+                />
+
+            <ImageButton
+                android:id="@+id/imageBtn1"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:src="@drawable/card_q"
+                android:scaleType="fitXY"
+                />
+
+            <ImageButton
+                android:id="@+id/imageBtn2"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:src="@drawable/card_q"
+                android:scaleType="fitXY"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageBtn3"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:src="@drawable/card_q"
+                android:scaleType="fitXY"
+                />
+
+            <ImageButton
+                android:id="@+id/imageBtn4"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:src="@drawable/card_q"
+                android:scaleType="fitXY"
+                />
+
+            <ImageButton
+                android:id="@+id/imageBtn5"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:src="@drawable/card_q"
+                android:scaleType="fitXY"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageBtn6"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:src="@drawable/card_q"
+                android:scaleType="fitXY"
+                />
+
+            <ImageButton
+                android:id="@+id/imageBtn7"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:src="@drawable/card_q"
+                android:scaleType="fitXY"
+                />
+
+            <ImageButton
+                android:id="@+id/imageBtn8"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:src="@drawable/card_q"
+                android:scaleType="fitXY"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageBtn9"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:src="@drawable/card_q"
+                android:scaleType="fitXY"
+                />
+
+            <ImageButton
+                android:id="@+id/imageBtn10"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:src="@drawable/card_q"
+                android:scaleType="fitXY"
+                />
+
+            <ImageButton
+                android:id="@+id/imageBtn11"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:src="@drawable/card_q"
+                android:scaleType="fitXY"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

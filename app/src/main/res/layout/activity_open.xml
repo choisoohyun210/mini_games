@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/open_layout"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/cutefont"
+        android:gravity="center"
+        android:text="냥이의 모험"
+        android:textColor="#DA273139"
+        android:textSize="50dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@android:color/transparent"
+
+        >
+
+        <TextView
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:clickable="true"
+            android:fontFamily="@font/cutefont"
+            android:gravity="center"
+
+            android:onClick="onStart"
+            android:text="게임시작"
+            android:textColor="#D033373A"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="랭킹"
+            android:textSize="30dp"
+            android:clickable="true"
+            android:onClick="onRanking"
+            android:gravity="center"
+            android:textColor="#D033373A"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/cutefont"/>
+
+        <TextView
+            android:id="@+id/option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:alpha="0.93"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:fontFamily="@font/cutefont"
+            android:gravity="center"
+            android:onClick="onOption"
+            android:text="환경설정"
+            android:textColor="#D033373A"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
